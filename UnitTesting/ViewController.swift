@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(2.square())
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +22,8 @@ class ViewController: UIViewController {
 
 
 }
-
+extension Int{
+    func square() -> Int{
+        return self * self
+    }
+}
